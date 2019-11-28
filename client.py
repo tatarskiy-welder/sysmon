@@ -3,9 +3,11 @@ import collector
 import time
 import os
 
+IP = 'localhost'
+
 sock = socket.socket()
 
-sock.connect(('localhost', 7777))
+sock.connect((IP, 7777))
 
 while True:
     sock.recv(16)
